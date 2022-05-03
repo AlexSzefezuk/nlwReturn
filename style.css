@@ -1,10 +1,17 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --primary-color: hsl(170, 100%, 26%);
   --headline: hsl(210, 11%, 15%);
-  --paragraph: hsl(210, 9%, 31%)
-
+  --paragraph: hsl(210, 9%, 31%);
+  --brand-green-light: hsl(148, 23%, 89%);
+  --brand-beige: hsl(39, 100%, 97%);
   font-size: 62.5%;
 }
+
 
 body {
   font-family: 'DM Sans';
@@ -12,23 +19,92 @@ body {
   text-align: center;
 }
 
+header {
+  width: 37.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:4.1rem;
+
+}
+
+
 h4 {
   font-size: 1.4rem;
-  color: var(--primary-color)
+  color: var(--primary-color);
+  margin-bottom: 1.6rem;
 }
 
 h1 {
   font-size: 3.4rem;
   color: var(--headline);
   line-height: 130%;
+  margin-bottom: 2.4rem;
 }
 
 p {
   font-size: 1.8rem;
   line-height: 150%;
   color: var(--paragraph);
+  margin-bottom: 3.2rem;
 }
 
 button {
-  background: var(--primary-color)
+  background: var(--primary-color);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4rem;
+  margin-bottom: 6rem;
+  border: none;
+  height: 6.2rem;
+  width: 26.3rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.containerDados{
+  display: flex;
+  width: 32.7rem;
+  height: 47rem;
+  background-color: var(--brand-beige);
+  content: '';
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.6rem;
+  border: solid 1px var(--brand-green-light);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+span div {
+  width: 16.7rem;
+  height: 9rem;
+}
+
+span div h3 {
+  font-size: 4.8rem;
+  color: var(--headline);
+  line-height: 130%;
+
+}
+
+span div p {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  line-height: 150%;
+
+}
+
+span div :first-child{
+  margin-top: 4rem;
+}
+
+span div :last-child{
+  margin-bottom: 4rem;
 }
