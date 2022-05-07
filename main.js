@@ -1,10 +1,29 @@
+window.addEventListener('scroll', onScroll)
+
+
+onScroll()
 function onScroll() {
+  showNav()
+  showBackToTopButton()
+}
+
+function showNav() {
   if (scrollY > 0) {
     navigation.classList.add('scroll')
   } else {
     navigation.classList.remove('scroll')
   }
 }
+
+
+function showBackToTopButton() {
+  if (scrollY > 70) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
 
 function openMenu() {
   document.body.classList.add('menu-expanded')
